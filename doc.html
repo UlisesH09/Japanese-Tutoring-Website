@@ -10,7 +10,6 @@
         <h1>Welcome! (いらっしゃいませ!)</h1>
     </header>
 
-
  <main>
     <section class="introduction">
 
@@ -26,12 +25,25 @@
 
 <p>So, are you ready to embark on this linguistic adventure with me? Let's explore the beauty of Japanese together, one lesson, and one milestone at a time! 頑張ってください! (Do your best!) </p>
 
+</section>
+<form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="registerUser()">Register</button>
+</form>
+
+<div id="response"></div>
 </section>
 
 <script src="doc.js"></script>
+
 </main>
-
 </body>
-
 </html>
