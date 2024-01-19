@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1e07ef; /* Light gray background */
+    color: #12b518;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Main content styles */
+main {
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Paragraph styles */
+p {
+    max-width: 800px;
+    margin-bottom: 15px;
+    line-height: 2;
+    color: #e31111; 
+}
+
+/* Image styles */
+.image-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Background pattern */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('download.htm');
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+/* Navigation Bar styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: block; /* Change from 'inline' to 'block' */
+    width: 100px; /* Add margin-bottom for spacing between list items */
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: hsl(56, 97%, 47%);
+}
+
+/* Reset some default styles for the navigation list */
+nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Reset the navigation bar styles for header */
+header {
+    margin-bottom: 0; /* Remove the margin-bottom */
+    border-radius: 0; /* Remove the border-radius */
+}
+
+/* Reset the navigation bar styles for main */
+main {
+    text-align: left; /* Adjust text alignment */
+}
+
+/* Reset the navigation bar styles for section */
+section {
+    margin-bottom: 0; /* Remove the margin-bottom */
+}
+
+/* Reset the navigation bar styles for paragraphs */
+p {
+    color: #12b518; /* Change the color for paragraphs */
+}
+
+/* Reset the navigation bar styles for image section */
+.image-section img {
+    border-radius: 0; /* Remove the border-radius for images */
+    box-shadow: none; /* Remove the box-shadow for images */
+}
+
+/* Reset the background pattern styles */
+body::before {
+    content: none; /* Remove the background pattern */
+}
