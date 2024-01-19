@@ -1,3 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Import your main component
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
 // Register click event for navigation links
 document.addEventListener('click', function (event) {
     // Check if the clicked element is a link inside the navigation bar
